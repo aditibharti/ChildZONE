@@ -2,23 +2,28 @@
 <title>Registration Page</title>
 <body>
 <head>
-<h2><center>Registration</center></h2></head>
+<div class="nav">
+<center><img src="zf.jpg" alt="childZONE Logo" height="90" width="90"></center>
+  <h2><center>Registration</center></h2></head>
+</div>
 <style>
   body {
-     background-image: url("2.jpg");
+     background-image: url("4.jpg");
 	 background-size:1400px;
-	 margin-top:5%;
-	} 
+	 margin-top:5%;89
+	 }
 </style>	 
 <style>
 table{
+ 
  border: 3px solid black;
-}
+ 
+ }
 th,td{}
 </style>
 </body>
 <body>
-<form action="xyz.html"method"get">
+<form class="form-register" method="post" onsubmit="return validate();">
 <feildset>
 <center><table>
 <tr><th>Student Name</th>
@@ -58,9 +63,9 @@ th,td{}
 <tr><th>State</th>
 <td><input type="state" size=30/></td></tr>
 <tr><th>PinCode</th>
-<td><input type="text" Name="number" size=7 maxlength=1/></td></tr>
+<td><input type="text" Name="number" size=7 maxlength=6/></td></tr>
 <tr><th>Contact No.</th>
-<td><input type="text" Name="number" size=12 maxlength=1/></td></tr>
+<td><input type="text" Name="number" size=12 maxlength=10/></td></tr>
 <tr><th>Favoutite Subject</th>
 
 <td><select>
@@ -74,8 +79,8 @@ th,td{}
 <td><textarea name= "Hobbies" rows="2" cols ="40">
 </textarea></td></tr>
 <center>
-<tr><th colspan="2"><center><input type="Submit" Value="Submit"/></center><br>
-<center><input type="Reset" Value="Reset" Name="Reset"/></center></th></tr>
+<tr><th colspan="2"><center><a href="Home1.html"><input type="Submit" Class="Submit" value="SingUp"/></a></center><br>
+<center><input type="Reset" Class="Reset" Name="Reset"/></center></th></tr>
 </center>
 </feildset>
 </form>
